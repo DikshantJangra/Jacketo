@@ -1,149 +1,160 @@
 *{
-    margin: 0%;
     padding: 0%;
+    margin: 0%;
     box-sizing: border-box;
 }
 body, html{
     height: 100%;
     width: 100%;
     font-family: "Inter", sans-serif;
+
 }
-#main{
+.main{
     max-height: 100%;
+    max-width: 100%;
+}
+nav{
+    height: auto; 
+    display: flex;
+    padding: 2rem 3rem 0.5rem 3rem;
     width: 100%;
 }
-#navbar{
-    padding: 0px 50px 0px 20px;
-    display: flex;
-    height: 90px;
-    width: 100%;
-}
-#nav-left{
-    display: flex;
-    padding: 20px 30px 15px 30px;
+.nav-left{
     width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    position: relative;
 }
-#nav-left img{
-    height: 80px;
-    width: 80px;
+.nav-left img{
+    height: 5vw;
+    width: auto;
 }
-#nav-left h1 .rotated {
-    font-size: 90px;
-    font-weight: 100;
+.nav-left h1 .rotated{
+    font-size: 6vw;
     font-family: "Inika";
+    font-weight: 500;
     color: #56545A;
     position: absolute;
-    top: 8px;
-    left: 140px;
-    rotate: 19deg;
-    animation: J;
-    animation-duration: 1s;
+    transform: rotate(25deg);
+    top: -25%;
+    left: 13%;
+    animation: J 1s;
 }
 @keyframes J{
     from{
-        roate:19deg;
+        transform: rotate(25deg);
     }
     to{
-        rotate: 388deg;
+        transform: rotate(385deg);
     }
 }
-
-#nav-left h1{
-    align-items: flex-end;
-    padding-left: 45px;
-    padding-top: 45px;
+.nav-left h1{
+    font-size: 1.5vw;
+    font-family: "Inika";
+    font-weight: 100;
     color: #56545A;
-    font-size: 25px;
+    padding-left: 3rem;
 }
-
-#nav-right{
-    display: flex;
-    justify-content: flex-end;
-    align-items:center;
+.nav-right{
     width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    padding-right: 1rem;
 }
-#nav-right a{
+.nav-right a{
+    font-size: 1.1rem;
+    font-weight: 300;
     text-decoration: none;
-    padding: 8px;
+    padding: 0.4rem;
     color: #56545A;
 }
-#navbar i{
-    padding-left: 10px;
-    background-color: black;
-    color: whitesmoke;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 50%;
+.nav-right .active{
+    font-weight: 500;
+    color: black;
 }
-#center{
-    width: 100%;
+.nav-right i{
+    font-size: 1.1rem;
+    background: #56545A;
+    padding: 13px;
+    border-radius: 50px;
+    color: #ffffff;
 }
-#center h1{
-    padding: 20px 0px 0px 60px;
-    font-size: 100px;
+.content{
+    max-height: 100%;
+    max-width: 100%;
+}
+.center h1{
+    font-size: 6vw;
+    padding-left: 3vw;
     font-weight: 400;
     line-height: 1;
 }
-#center-in{
-    width: 100%;
-    height: 160px;
-}
-#center-in p{
-    padding:0px 0px 0px 60px;
-    font-size: 20px;
-    font-weight: 100;
-    line-height: 1;
-    color:#56545A;
-
-}
-#nav-right .active{
-    color: black;
-    font-weight: 700;
-}
-#center-in{
-    width: 100%;
+.center-in{
     display: flex;
-    align-items: center;
+    padding: 1vw 3vw;
     justify-content: space-between;
 }
-#center-right{
-    width: 25%;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    font-size: 18px;
+.center-in p{
+    font-size: 1.25vw;
+    color: #56545A;
+    padding-top: 2vw;
 }
-.elem{
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 2px solid black;
+.center-right{
+    font-size: 1.2vw;
+    width: 20vw;
 }
-.elem a{
+.center-right a{
+    font-size: 1.2vw;
+    text-align: left;
     text-decoration: none;
     color: #56545A;
 }
-#bottom{
-    /* height: calc(100% - 72%); */
-    height: 219px;
+.center-right .elem:hover{
+    background-color: #56545a31;
+}
+.center-right i{
+    font-size: 1.4vw;
+    text-align: right;
+    text-decoration: none;
+    color: #56545A;
+}
+.center-right .elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7vw;
+    border-top: 2px solid #56545A;
+}
+.bottom{
+    height: 27.5vh;
     width: 100%;
-    /* background-image: url(https://assets.vogue.in/photos/5ce4416b3bf9b426bcb1e2a0/16:9/w_1920,h_1080,c_limit/Style-steals-poka-dots.jpg); */
-    background-image:url(https://i.postimg.cc/TYwjJ2s2/Untitled.png);
-    background-size: contain;
-    /* background-position: 0 24%;     */
-    /* background-position: 0% 58%; */
+    background: url(https://github.com/DikshantJangra/Jacketo/blob/main/imgs/index_product.png?raw=true);
     background-repeat: no-repeat;
     background-color: #67656A;
+    position: relative;
 }
-.elem:hover i{
-    opacity: 1;
+.bottom h1{
+    align-items: flex-end;
+    padding-left: 107%;
+    padding-top: 12.5%;
+    color: whitesmoke;
+    font-size: 35px;
 }
-.elem:hover{
-    background-color: rgb(240, 235, 235);
+.bottom h1 .rotated {
+    font-size: 10vw;
+    font-weight: 100;
+    font-family: "Inika";
+    /* color: #56545A; */
+    color: whitesmoke;
+    position: absolute;
+    top: -11%;
+    left: 100%;
+    transform: rotate(25deg);
 }
-.elem:hover a{
-    text-decoration: dashed;
-}
+
+
 
 #about{
     width: 100%;
@@ -259,7 +270,7 @@ body, html{
     text-align: center;
 }
 #product-details img{
-    height: 696px;
+    height: 42.884vw;
     width: auto;
 }
 
@@ -267,126 +278,97 @@ body, html{
 #product-line1{
     position: absolute;
     top: 50%;
-    left: 22%;
+    left: 18%;
     border: 1px solid #1D1F1E;
-    width: 400px;
-    animation: line1;
-    animation-duration: 2s;
+    width: 25vw;
+    animation: line1 2s;
 }
 @keyframes line1{
     from{
         top: 50%;
-        left: 20%;
+        left: 10%;
     }
     to{
         top: 50%;
-        left: 22%;
+        left: 18%;
     }
 }
 #line1-text{
     position: absolute;
     top: 48.5%;
-    left: 2.5%;
-    width: 400px;
-    animation: line1-text;
-    animation-duration: 2s;
+    left: -1%;
+    width: 25vw;
+    animation: line1-text 2s;
 }
 @keyframes line1-text{
     from{
-        top: 48.5%;
-        left: 1%;
+        left: -10%;
     }
     to{
-        top: 48.5%;
-        left: 2.5%;
+        left: -1%;
     }
 }
 #product-line2{
     position: absolute;
     top: 50%;
-    left: 61.5%;
+    left: 59%;
     border: 1px solid #1D1F1E;
-    width: 250px;
-    animation: line2;
-    animation-duration: 2s;
+    width: 15vw;
+    animation: line2 2s;
 }
 @keyframes line2{
     from{
-        left:59%
+        left:67%;
     }
     to{
-        left:61.5%
+        left: 59%
     }
 }
 #line2-text{
     position: absolute;
     top: 48.5%;
-    left: 70.5%;
-    width: 400px;
-    animation: line2-text;
-    animation-duration: 2s;
+    left: 67%;
+    width: 25vw;
+    animation: line2-text 2s;
 }
 @keyframes line2-text{
     from{
-        left:68%;
+        left:78%;
     }
     to{
-        left:70.5%;
+        left:67%;
     }
 }
 #product-line3{
     position: absolute;
     top: 90%;
-    left: 61.5%;
+    left: 62.5%;
     border: 1px solid #1D1F1E;
-    width: 250px;
-    animation: line3;
-    animation-duration: 2s;
+    width: 15vw;
+    animation: line3 2s;
 }
 @keyframes line3{
     from{
-        left:58.5%;
+        left:67%;
     }
     to{
-        left:61.5%;
+        left:62.5%;
     }
 }
 #line3-text{
     position: absolute;
     top: 89%;
     left: 69%;
-    width: 400px;
-    animation: line3-text;
-    animation-duration: 2s;
+    width: 25vw;
+    animation: line3-text 2s;
 }
 @keyframes line3-text{
     from{
-        left:67%;
+        left:78%;
     }
     to{
         left:69%;
     }
-}
-
-#bottom h1 .rotated {
-    font-size: 180px;
-    font-weight: 100;
-    font-family: "Inika";
-    /* color: #56545A; */
-    color: whitesmoke;
-    position: absolute;
-    top: 565px;
-    left: 65%;
-    rotate: 19deg;
-}
-
-#bottom h1{
-    align-items: flex-end;
-    padding-left: 145%;
-    padding-top: 90px;
-    /* color: #56545A; */
-    color: whitesmoke;
-    font-size: 35px;
 }
 
 #shopping{
@@ -429,254 +411,280 @@ body, html{
     background-color: #FFB800;
 }
 
-@media (max-width: 600px){
-    #main{
-        max-height: 100%;
-    }
-    #navbar{
-        padding: 0px 50px 0px 20px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    nav{
+        height: auto;
         display: flex;
-        height: 90px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 2rem 3rem;
         width: 100%;
     }
-    #nav-left{
-        display: flex;
-        padding: 20px 30px 15px 30px;
+    .nav-left{
         width: 50%;
+        display: flex;
+        align-items: end;
+        justify-content: flex-start;
+        position: relative;
     }
-    #nav-left img{
-        height: 80px;
-        width: 80px;
+    .nav-left img{
+        height: 20vw;
+        width: auto;
     }
-    #nav-left h1 .rotated {
-        font-size: 90px;
-        font-weight: 100;
+    .nav-left h1 .rotated{
+        font-size: 26vw;
         font-family: "Inika";
+        font-weight: 500;
         color: #56545A;
         position: absolute;
-        top: 8px;
-        left: 140px;
-        rotate: 19deg;
-        animation: J;
-        animation-duration: 1s;
+        transform: rotate(25deg);
+        top: -35%;
+        left: 60%;
+        animation: J 1s;
     }
     @keyframes J{
         from{
-            roate:19deg;
+            transform: rotate(25deg);
         }
         to{
-            rotate: 388deg;
+            transform: rotate(385deg);
         }
     }
-    
-    #nav-left h1{
-        align-items: flex-end;
-        padding-left: 45px;
-        padding-top: 45px;
+    .nav-left h1{
+        font-size: 10vw;
+        font-family: "Inika";
+        font-weight: 100;
         color: #56545A;
-        font-size: 25px;
+        padding-left: 3rem;
     }
-    
-    #nav-right{
-        display: flex;
-        justify-content: flex-end;
-        align-items:center;
+    .nav-right{
         width: 50%;
-        padding-top: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0rem 0rem 9rem;
     }
-    #nav-right a{
+    .nav-right a{
+        font-size: 1.1rem;
+        font-weight: 300;
         text-decoration: none;
-        padding: 8px;
+        padding: 0.4rem;
         color: #56545A;
     }
-    #navbar i{
-        padding-left: 10px;
-        background-color: black;
-        color: whitesmoke;
-        font-size: 20px;
-        padding: 10px;
-        border-radius: 50%;
+    .nav-right .active{
+        font-weight: 500;
+        color: black;
     }
-    #center{
-        width: 100%;
+    .nav-right i{
+        font-size: 1.1rem;
+        background: #56545A;
+        padding: 12px;
+        border-radius: 50px;
+        color: #ffffff;
     }
-    #center h1{
-        padding: 70px 0px 0px 60px;
-        font-size: 40px;
+
+
+
+
+
+
+
+    .center{
+        height: 100%;
+    }
+    .center h1{
+        font-size: 7vh;
+        padding: 0vw 5vh;
         font-weight: 400;
         line-height: 1;
     }
-    #center-in{
+    .center-in{
         width: 100%;
-        height: 160px;
+        /* height: 160px; */
+        display:flex;
+        /* flex-direction: column; */
+        padding: 1vh 5vh;
+        /* align-items: flex-end; */
+        /* justify-content: space-between; */
     }
-    #center-in p{
-        padding:10px 60px 0px 60px;    
+    .center-in p{
+        font-size: 2.2vh;
+        color: #56545A;
+        padding: 8vw 0vw;
     }
-
-    #center-in{
-        width: 100%;
+    .center-right{
+        position: absolute;
+        font-size: 8vw;
+        width: 47vw;
+        top: 98%;
+        left: 50%;
+    }
+   
+    .center-right a{
+        font-size: 5.5vw;
+        text-align: left;
+        text-decoration: none;
+        color: #e4dada;
+    }
+    .center-right .elem:hover{
+        background-color: #56545a31;
+    }
+    .center-right i{
+        font-size: 3vw;
+        text-align: right;
+        text-decoration: none;
+        color: #b6b2be;
+    }
+    .center-right .elem{
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-between;
+        padding: 0.7vh;
+        border-top: 2px solid #56545A;
     }
-    #center-right{
-        width: 40%;
-        padding-right: 0px;
-        padding-top: 30px;
-        font-size: 14px;
-        color: #ffffff;
+    .bottom{
+        position:static;
+        height: 30vh;
+        width: 100%;
+        background: url(/Projects/p1_with_figma_again/imgs/responsive_index.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #67656A;
     }
-    #center-right a{
-        color: #ffffff;
+    .bottom h1{
+        display: none;
     }
-
-
+    .bottom h1 .rotated {
+        display: none;
+    }
     
-#bottom{
-    height: 187px;
-    width: 100%;
-    background-image:url(https://i.ibb.co/fG1kddV/Untitled.png);
-    background-repeat: no-repeat;
-    background-color: #67656A;
-    background-size: cover;
-    background-position: 50%;
-}
-#bottom h1 .rotated {
-   display: none;
-}
 
-#bottom h1{
-    display: none;
-}
 
-#product-details{
-    padding-top: 80px;
-    width: 100%;
-    overflow-y: hidden;
-}
-#product-details img{
-    max-height: 500px;
-    width: auto;
-    text-align: none;
-}
 
-#product-line1{
-    top: 50%;
-    left: 1%;
-    width: 200px;
-}
-@keyframes line1{
-    from{
-        top: 50%;
-        left: -5%;
-        width: 0px;
+    #product-details{
+        text-align: center;
     }
-    to{
-        top: 50%;
+    #product-details img{
+        height: 65vh;
+        width: auto;
+    }
+    
+    
+    #product-line1{
+        position: absolute;
+        top: 60%;
         left: 1%;
-        width: 200px;
+        border: 1px solid #1D1F1E;
+        width: 22vw;
+        animation: line1 2s;
     }
-}
-#line1-text{
-    position: absolute;
-    top: 47%;
-    left: -5%;
-    width: 200px;
-    font-size: 13px;
-}
-@keyframes line1-text{
-    from{
-        top: 47%;
-        left: -20%;
+    @keyframes line1{
+        from{
+            left: -10%;
+        }
+        to{
+            left: 1%;
+        }
     }
-    to{
-        top: 47%;
-        left: -5%;
+    #line1-text{
+        position: absolute;
+        top: 52%;
+        left: -1%;
+        width: 25vw;
+        animation: line1-text 2s;
     }
-}
-#product-line2{
-    position: absolute;
-    top: 50%;
-    left: 63%;
-    border: 1px solid #1D1F1E;
-    width: 38px;
-    animation: line2;
-    animation-duration: 2s;
-}
-@keyframes line2{
-    from{
+    @keyframes line1-text{
+        from{
+            left: -10%;
+        }
+        to{
+            left: -1%;
+        }
+    }
+    #product-line2{
+        position: absolute;
         top: 50%;
-        left: 100%;
-        width: 0px;
+        left: 59%;
+        border: 1px solid #1D1F1E;
+        width: 16vw;
+        animation: line2 2s;
     }
-    to{
-        top: 50%;
-        left: 63%;
-        width: 55px;
+    @keyframes line2{
+        from{
+            left:70%;
+        }
+        to{
+            left: 59%
+        }
     }
-}
-#line2-text{
-    position: absolute;
-    top: 48%;
-    left: 73%;
-    width: 40px;
-    animation: line2-text;
-    animation-duration: 2s;
-}
-@keyframes line2-text{
-    from{
-        top: 48%;
-        left: 110%;
+    #line2-text{
+        position: absolute;
+        top: 48.5%;
+        left: 75%;
+        width: 25vw;
+        animation: line2-text 2s;
     }
-    to{
-        top: 48%;
-        left: 73%;
+    @keyframes line2-text{
+        from{
+            left:90%;
+        }
+        to{
+            left:75%;
+        }
     }
-}
-#product-line3{
-    position: absolute;
-    top: 90%;
-    left: 30%;
-    border: 1px solid #1D1F1E;
-    width: 150px;
-    animation: line3;
-    animation-duration: 2s;
-}
-@keyframes line3{
-    from{
+    #product-line3{
+        position: absolute;
         top: 90%;
-        left: 5%;
-        width: 0px;
+        left: 62.5%;
+        border: 1px solid #1D1F1E;
+        width: 15vw;
+        animation: line3 2s;
+        rotate: 90deg;
     }
-    to{
-        top: 90%;
-        left: 30%;
-        width: 150px;
+    @keyframes line3{
+        from{
+            top:105%;
+        }
+        to{
+            top:90%;
+        }
     }
-}
-#line3-text{
-    position: absolute;
-    top: 87%;
-    left: 18%;
-    width: 40px;
-    animation: line3-text;
-    animation-duration: 2s;
-}
-
-@keyframes line3-text{
-    from{
-        top: 87%;
-        left: -8%;
+    #line3-text{
+        position: absolute;
+        top: 94%;
+        left: 60%;
+        width: 25vw;
+        animation: line3-text 2s;
     }
-    to{
-        top: 87%;
-        left: 18%;
+    @keyframes line3-text{
+        from{
+            top:105%;
+        }
+        to{
+            top:94%;
+        }
     }
-}
-
-
+    
 #news{
     height: 100%;
     max-width: 100%;
